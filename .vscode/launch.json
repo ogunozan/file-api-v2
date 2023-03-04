@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "api",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-api",
+            "program": "${workspaceFolder}/src/backend/FileApi/bin/Debug/net6.0/FileApi.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/backend/FileApi",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "^\\s*Now listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "console": "internalConsole",
+            "internalConsoleOptions": "neverOpen"
+        }
+    ]
+}
